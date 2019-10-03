@@ -1,11 +1,8 @@
 server:
-  port: 8082
+    port: 8083
 
-names:
-  - 'Jin'
-  - 'Kate'
-
-topic: 'woman-name'
+man-name-topic: 'man-name'
+woman-name-topic: 'woman-name'
 
 spring:
   kafka:
