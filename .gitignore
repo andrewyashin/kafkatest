@@ -1,0 +1,5 @@
+.idea
+nameproducerservice/.idea
+nameproducerservice/lib
+nameproducerservice/*.iml
+nameproducerservice/target
