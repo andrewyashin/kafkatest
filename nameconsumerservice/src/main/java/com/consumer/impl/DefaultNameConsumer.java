@@ -13,6 +13,7 @@ public class DefaultNameConsumer implements NameConsumer {
     private List<String> manNames = new ArrayList<>();
     private List<String> womanNames = new ArrayList<>();
 
+
     @Override
     @KafkaListener(topics = "man-name")
     public void consumeManName(String name) {
@@ -39,6 +40,6 @@ public class DefaultNameConsumer implements NameConsumer {
     public List<String> getAllConsumedNames() {
         final ArrayList<String> resultNames = new ArrayList<>(manNames);
         resultNames.addAll(womanNames);
-        return Collections.unmodifiableList(womanNames);
+        return Collections.unmodifiableList(resultNames);
     }
 }
